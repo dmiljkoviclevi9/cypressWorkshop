@@ -10,3 +10,4 @@ package-lock.json
 .ntvs_analysis.dat
 node_modules/
 
+**/cypress/videos/
