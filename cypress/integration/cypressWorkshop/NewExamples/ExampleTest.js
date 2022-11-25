@@ -10,10 +10,10 @@ describe('How to use .then() and .as() methods', () => {
         cy.get('[data-test="login-button"]').click()
 
         // Usage of .then()
-        cy.get('#item_4_title_link > .inventory_item_name').then(($link) => {   
-          const linkText = $link.text()
-          expect(linkText).is.eql('Sauce Labs Backpack')
-        }).click()
+        // cy.get('#item_4_title_link > .inventory_item_name').then(($link) => {   
+        //   const linkText = $link.text()
+        //   expect(linkText).is.eql('Sauce Labs Backpack')
+        // }).click()
 
         // const linkText variable can only be accessed inside then() block.
         // But what if we want to access it outside of the then() block? => Solution is: aliases!
@@ -32,7 +32,7 @@ describe('How to use .then() and .as() methods', () => {
         // })
 
         // Shorter defined .as() using .invoke()
-        // cy.get('#item_4_title_link > .inventory_item_name').invoke('text').as("linkText")
+        cy.get('#item_4_title_link > .inventory_item_name').invoke('text').as("linkText")
 
     })
 })
