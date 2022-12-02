@@ -69,7 +69,7 @@ describe('Create new account for the user and update users address', () => {
         // cy.get('.base').should('contain', 'You are signed out')        
     })
 
-    it.skip('Update users address', () => {
+    it('Update users address', () => {
     //    cy.visit('https://magento.softwaretestingboard.com/')
         
     //     // Assert user is on the main page

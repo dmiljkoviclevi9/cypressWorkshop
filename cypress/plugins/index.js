@@ -15,8 +15,14 @@
 /**
  * @type {Cypress.PluginConfig}
  */
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line no-unused-varsconst fs = require('fs-extra')
+
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+  
+  // Uncomment for cypress variables
+  //config.defaultCommandTimeout = 20000
+  //return config
+  
 }
