@@ -1,0 +1,10 @@
+{
+    "env": {
+        "username": "tester18@t.com",
+        "password": "Test67890@"
+    },
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "cypress/configs/reporter-config.json"
+    }
+}

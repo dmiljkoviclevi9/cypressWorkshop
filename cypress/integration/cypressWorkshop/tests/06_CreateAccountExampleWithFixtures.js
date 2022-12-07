@@ -58,6 +58,7 @@ describe('Create new account for the user and update address using fixtures', ()
     it('Update users address', () => {
         // Sign in as previously created user
         cy.contains('Sign In').click()
+        cy.get('.page-title').contains('Customer Login')
         cy.get('#email').clear().type(dataJson.email)
         cy.get('#pass').clear().type(dataJson.pass)
         cy.get('#send2').click()
@@ -73,6 +74,7 @@ describe('Create new account for the user and update address using fixtures', ()
 
         // Go to Address Book page
         cy.get('a').contains('Address Book').click()
+        cy.get('.page-title').contains('Add New Address')
 
         // Assert already filled in data
         cy.get('#firstname').should('have.attr', 'value', dataJson.firstName)

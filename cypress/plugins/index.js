@@ -15,7 +15,16 @@
 /**
  * @type {Cypress.PluginConfig}
  */
-// eslint-disable-next-line no-unused-varsconst fs = require('fs-extra')
+// eslint-disable-next-line no-unused-vars
+
+const fs = require('fs-extra')
+const path = require('path')
+
+function getConfigurationByFile(file) {
+  const pathToConfigFile = path.resolve('cypress/configs', `${file}.json`)
+
+  return fs.readJson(pathToConfigFile)
+}
 
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
@@ -25,4 +34,7 @@ module.exports = (on, config) => {
   //config.defaultCommandTimeout = 20000
   //return config
   
+  const file = config.env.configFile || 'configQA'
+
+  return getConfigurationByFile(file)
 }

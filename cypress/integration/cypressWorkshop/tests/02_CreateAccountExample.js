@@ -1,12 +1,12 @@
 /// <reference types='Cypress'/>
 
-import {util} from "../util"
+import {util} from "../pages/util.js"
 
 var randomEmail = ""
 
 const firstName = 'Tester1'
 const lastName = 'Testeric1'
-const email = 'test@t8.com'
+const email = 'test@t50.com' //needs to be unique
 const password = 'a1234567A'
 
 const phoneNumber = '123456789'

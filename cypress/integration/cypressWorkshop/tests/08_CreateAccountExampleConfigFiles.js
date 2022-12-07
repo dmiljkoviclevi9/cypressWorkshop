@@ -16,10 +16,10 @@ describe('Sign in user and demonstrate switching between multiple config files',
         cy.log(Cypress.env("username"))
         cy.log(Cypress.env("password"))
         
-        cy.signinUserCustomCommand(Cypress.env("username"), 'Cypress.env("password")')
+        cy.signinUserCustomCommand(Cypress.env("username"), Cypress.env("password"))
 
         // Assert user is signed in
-        cy.get(':nth-child(2) > .greet > .logged-in').should('contain.text', `Welcome`)        
-        
+        cy.get(':nth-child(2) > .greet > .logged-in').should('contain.text', `Welcome`)  
+ 
     })
 })

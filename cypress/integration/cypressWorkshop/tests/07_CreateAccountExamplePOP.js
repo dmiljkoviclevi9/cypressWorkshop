@@ -80,7 +80,6 @@ describe('Create account and update users address using fixtures and POP', () =>
         // AddNewAddressPage.updateAddress(dataJson.phoneNumber, dataJson.streetAddress, dataJson.city, dataJson.zipCode, dataJson.country)
         // Second example:
         AddNewAddressPage.updateAddressWithFixtureData(dataJson)
-        Cypress.config('defaultCommandTimeout',5000)
 
         // Assert address is saved
         cy.get(AddNewAddressPage.messages.successMessage).should('contain', 'You saved the address.')

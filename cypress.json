@@ -1,3 +1,13 @@
 {
-    "chromeWebSecurity": false
+    "chromeWebSecurity":false,
+    "execTimeout": 12000,
+    "ignoreTestFiles": [
+        "*.page.js", 
+        "util.js"],
+
+    "env": {
+        "environmentName": "DEV",
+        "name": "develop",
+        "url": "https://magento.softwaretestingboard.com/"
+    }
 }

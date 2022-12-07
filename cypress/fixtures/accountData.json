@@ -1,0 +1,11 @@
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "tester10@t.com",
+    "pass": "Test12345@",
+    "phoneNumber": "123456789",
+    "streetAddress": "Test address",
+    "city": "Novi Sad",
+    "zipCode": "1234",
+    "country": "Serbia"
+}
